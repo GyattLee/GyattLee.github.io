@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main_content">
+      <div class="main_screen">
+        <div class="nav_bar">
+          <a href="index.html"><i class="fas fa-chevron-left"></i></a>
+        </div>
+        <div class="song_photo">
+          <img
+            src="data:image/jpeg;base64,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"
+          />
+        </div>
+        <div class="info_main">
+          <div class="song_info">
+            <span>bad guy</span>
+            <span>Billie Eilish</span>
+          </div>
+          <div class="info_icon">
+            <div class="song_icon">
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+          </div>
+        </div>
+        <div class="time_main">
+          <div class="time_bar">
+            <div class="song_past"></div>
+            <div class="song_current"></div>
+            <div class="song_future"></div>
+          </div>
+          <div class="song_time">
+            <span>1:32</span>
+            <span>-1:42</span>
+          </div>
+        </div>
+        <div class="play_icons">
+          <i class="fas fa-backward"></i>
+          <i class="fas fa-play"></i>
+          <i class="fas fa-forward"></i>
+        </div>
+        <div class="volume_main">
+          <span class="volume_down_icon"
+            ><i class="fas fa-volume-down"></i
+          ></span>
+          <div class="volume_bar">
+            <div class="volume_down"></div>
+            <div class="volume_current"></div>
+            <div class="volume_up"></div>
+          </div>
+          <span class="volume_up_icon"><i class="fas fa-volume-up"></i></span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
